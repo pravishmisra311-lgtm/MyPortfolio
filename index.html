@@ -14,40 +14,91 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Your Name">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+    <!--FAVICON-->
+    <link rel ="Shortcut icon" href="asests/img/favicon.png" type="image/x-icon">
+    
+    <!--REMIXICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
     <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="asests/css/styles.css">
+
 </head>
 <body>
 
     <!-- Header -->
-    <header>
-        <h1>Pravish Misra</h1>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/index.html" class="nav__logo">Pravish Misra</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#achievements" class="nav__link">Achievements</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav__conatact">Contact Me</a>
+                    </li>
+                    
+                </ul>
+
+                <button class="nav__close" id="nav__close" aria-label="Close-Menu" >
+                <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+            <button class="nav__toggle" id="nav__toggle" aria-label="Toggle Menu">
+            <i class="ri-menu-line"></i>
+            </button>
+        </nav>
     </header>
 
     <!-- Main content -->
-    <main>
-        <div>
-            <span>
-                <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Education</li>
-                <li>Contact</li>
-                </ul>
-            </span>
-        </div>
+    <main class="main">
+
+        <!--HOME SECTION-->
+        <section class="home section" id="home">
+
+        </section>
+
+        <!--ABOUT SECTION-->
+        <section class="about section">
+
+        </section>
+
+        <!--PROJECT SECTION-->
+        <section class="project section" id="projects">
+
+        </section>
+
+        <!--SKILLS SECTION-->
+        <section class="skills section" id="skills">
+
+        </section>
+        
+        <!--ACHIEVEMNT SECTION-->
+        <section class="achievement section" id="achievements">
+
+        </section>
+    
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Pravish Misra. All rights reserved.</p>
+    
     </footer>
 
     <!-- External JavaScript -->
-    <script src="script.js"></script>
+    <script src="assests/js/main.js"></script>
 </body>
 </html>
