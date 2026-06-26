@@ -29,7 +29,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="/index.html" class="nav__logo">Pravish Misra</a>
-            <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu " id="nav-menu">
                 <ul class="nav__list">
                     <li>
                         <a href="#home" class="nav__link">Home</a>
@@ -48,17 +48,18 @@
                     </li>
 
                     <li>
-                        <a href="#contact" class="nav__conatact">Contact Me</a>
+                        <a href="#contact" class="nav__contact">Contact Me</a>
                     </li>
                     
                 </ul>
-
-                <button class="nav__close" id="nav__close" aria-label="Close-Menu" >
+                <!--CLOSE BUTTON-->
+                <button class="nav__close" id="nav-close" aria-label="Close-Menu" >
                 <i class="ri-close-large-line"></i>
                 </button>
             </div>
-            <button class="nav__toggle" id="nav__toggle" aria-label="Toggle Menu">
-            <i class="ri-menu-line"></i>
+            <!--TOGGLE BUTTON-->
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle Menu">
+            <i class="ri-apps-2-fill"></i>
             </button>
         </nav>
     </header>
@@ -68,6 +69,22 @@
 
         <!--HOME SECTION-->
         <section class="home section" id="home">
+            <div class="blob-small"></div>
+            <div class="blob-small"></div>
+            <div class="home__container container grid">
+                <div class="home__data">
+                <h3 class="home__subtitle"></h3>
+                <h1 class="home__title">
+                    Frontend Web Developer & <br>
+                    <span id="home-typed">Problem Solver</span>
+                </h1>
+                <p class="home__description"></p>
+
+                </div>
+                <div class="home__images">
+
+                </div>
+            </div>
 
         </section>
 
@@ -99,6 +116,6 @@
     </footer>
 
     <!-- External JavaScript -->
-    <script src="assests/js/main.js"></script>
+    <script src="asests/js/main.js"></script>
 </body>
 </html>
