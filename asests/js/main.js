@@ -26,7 +26,34 @@ navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*=======HOME TEXT CIRCULAR====*/
+const homeText =document.getElementById('home-text'),
+letters=homeText.textContent.trim().split(''),
+angleStep=360/letters.length
+homeText.textContent=''
+letters.forEach((char,i)=>{
+    const span=document.createElement('span')
+    span.textContent=char
+    span.style.transform=`rotate(${i*angleStep}deg)`
+    homeText.appendChild(span)
+})
 
+/*HOME TYPED JS*/
+const typedHome = new Typed('#home-typed', {
+strings: ['DSA with Java Enthusiast', 'Full Stack Learner','Student'],
+typeSpeed: 60,
+backSpeed:30,
+backDelay:2000,
+loop:true,
+})
+
+/*HEADER STYLES*/
+const scrollHeader = () =>{
+const header = document.getElementById('header')
+this.scrollY >= 50 ? header.classList.add('scroll-header') 
+                    : header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 
 
