@@ -15,12 +15,15 @@
     <meta name="author" content="Your Name">
 
     <!--FAVICON-->
-    <link rel ="Shortcut icon" href="asests/img/favicon.png" type="image/x-icon">
+    <link rel ="Shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     
     <!--REMIXICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+    <!-----SWIPER CSS------>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <!-- External CSS -->
-    <link rel="stylesheet" href="asests/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body>
@@ -87,7 +90,7 @@
                 <div class="home__box-1"></div>
                 <div class="home__box-2"></div>
                 <div class="home__box-3"></div>
-                <img src="asests/img/home.png" alt="Digital Professional Portrait" class="home home__img">
+                <img src="assets/img/home.png" alt="Digital Professional Portrait" class="home home__img">
                 <div class="home__circle">
                     <span class="home__text" id="home-text">EXPLORE - MORE - LET'S-</span>
                     <a href="#about" class="home__arrow">
@@ -120,7 +123,76 @@
 
         <!--PROJECT SECTION-->
         <section class="project section" id="projects">
+        <h2 class="section__title">
+        View My <span>Projects</span>
+        </h2>
+        <div class="project__container container grid">
+            <div class="project__swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="project__card swiper-slide">
+                        <a href="#" target="_blank" class="project__link">
+                        <img src="assets/img/Project1.jpeg" alt="Portfolio project preview" class="project__image">
+                        <div class="project__arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                    </a>
+                        <div class="project__data">
+                        <span class="project__number">01</span>
+                        <h3 class="project_name">Plant Disease Detection and Farming Assisstance</h3>
+                        <p class="project__description">Website to detect disease in plant and get solution</p>
+                        </div>
+                        <div class="blob-big"></div>
+                    </article>
 
+                    <article class="project__card swiper-slide" >
+                        <a href="#" target="_blank" class="project__link">
+                        <img src="assets/img/Project2.png" alt="Portfolio project preview" class="project__image">
+                        <div class="project__arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                    </a>
+                        <div class="project__data">
+                        <span class="project__number">02</span>
+                        <h3 class="project_name">Portfolio Website</h3>
+                        <p class="project__description">My Portfolio Website to introduce myself</p>
+                        </div>
+                        <div class="blob-big"></div>
+                    </article>
+
+                    <article class="project__card swiper-slide" >
+                        <a href="#" target="_blank" class="project__link">
+                        <img src="" alt="Portfolio project preview" class="project__image">
+                        <div class="project__arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                    </a>
+                        <div class="project__data">
+                        <span class="project__number">03</span>
+                        <h3 class="project_name">Task Management Website</h3>
+                        <p class="project__description"></p>
+                        </div>
+                        <div class="blob-big"></div>
+                    </article>
+
+                    <article class="project__card swiper-slide" >
+                        <a href="#" target="_blank" class="project__link">
+                        <img src="" alt="Portfolio project preview" class="project__image">
+                        <div class="project__arrow">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                    </a>
+                        <div class="project__data">
+                        <span class="project__number">04</span>
+                        <h3 class="project_name"></h3>
+                        <p class="project__description"></p>
+                        </div>
+                        <div class="blob-big"></div>
+                    </article>
+                </div>
+                <!---pAGINATION-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         </section>
 
         <!--SKILLS SECTION-->
@@ -141,7 +213,10 @@
     </footer>
 <!--TYPED JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+    <!--------SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->
-    <script src="asests/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
