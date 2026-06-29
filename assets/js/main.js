@@ -50,22 +50,18 @@ loop:true,
 /*HEADER STYLES*/
 const scrollHeader = () =>{
 const header = document.getElementById('header')
-this.scrollY >= 50 ? header.classList.add('scroll-header') 
+this.scrollY >= 50 ? header.classList.add('scroll-header')
                     : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 /*SWIPER WORK*/
-const swiperProject = new Swiper('.project__swiper', {
-loop: true,
-spaceBetween:24,
-slidesPreview:'auto',
-grabCursor:true,
-speed:600,
-
-pagination: {
-    el: '.swiper-pagination',
-},
+const swiperProject = new Swiper(".project__swiper", {
+    loop:true,
+    
+    pagination: {
+        el: ".swiper-pagination",
+    },
 });
 
 
