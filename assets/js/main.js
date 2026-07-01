@@ -56,14 +56,26 @@ this.scrollY >= 50 ? header.classList.add('scroll-header')
 window.addEventListener('scroll', scrollHeader)
 
 /*SWIPER WORK*/
-const swiperProject = new Swiper(".project__swiper", {
-    loop:true,
-    
-    pagination: {
-        el: ".swiper-pagination",
-    },
+document.addEventListener('DOMContentLoaded', () => {
+    const projectSwiper = document.querySelector('.project__swiper');
+
+    if (projectSwiper) {
+        new Swiper('.project__swiper', {
+            loop: true,
+            grabCursor: true,
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+            speed: 600,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+           /* autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }*/
+        });
+    }
 });
-
-
 
 

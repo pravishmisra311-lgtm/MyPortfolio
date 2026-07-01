@@ -432,6 +432,13 @@ label{
     height: 100%;
     padding-bottom:4rem;
 }
+.project .swiper-pagination-bullets{
+    bottom:0;
+}
+.project .swiper-pagination-bullet{
+    background-color:var(--first-color);
+    transition:opacity 0.4s;
+}
 /*NAVIGATION FOR MOBILE DEVICES*/
 @media(width<=1150px){
     .nav__menu{
@@ -563,6 +570,9 @@ label{
         grid-template-columns:400px;
         justify-content:center;
     }
+    .project__card{
+        width: 350px;
+    }
 }
 
 /*LARGE DEVICE*/
@@ -658,4 +668,22 @@ label{
 .about__button{
     width: initial;
 }
+
+.project__container{
+    max-width:1380px;
+}
+.project__card{
+    width: 440px;
+    border-radius:3rem;
+    padding:1.5rem 1.5rem 4rem;
+}
+.project__image{
+    border-radius:2rem;
+}
+.project_number{
+    font-size:var(--bigger-font-size);}
+    .project .blob-big{
+        right:-3rem;
+    }
+
 }
