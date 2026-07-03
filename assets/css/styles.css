@@ -450,7 +450,7 @@ label{
 .skills__card{
     position:relative;
     background-color:var(--container-color);
-    padding:1.5rem 1.5rem;
+    padding:1.5rem 1rem;
     border-radius:1.5rem;
     display:flex;
     flex-direction:column;
@@ -461,18 +461,18 @@ label{
 .skills__profession{
     display:flex;
     align-items:center;
-    column-gap:0.5rem;
+    column-gap:0.4rem;
     justify-content:center;
     z-index:5;
 }
 
 .skills__icon{
-    font-size:1rem;
+    font-size:3rem;
     color:var(--first-color);
 }
 
 .skills__title{
-    font-size:var(--h2-font-size);
+    font-size:var(--h1-font-size);
     color:var(--white-color);
 }
 
@@ -485,12 +485,33 @@ label{
 }
 
 .skills__item{
-    display:inline;
-
+    display:flex;
     align-items:center;
     column-gap:0.25rem;
     cursor:default;
     transition: filter 0.4s;
+}
+.skills__img{
+    width: 16px;
+    border-radius:10%;
+}
+.skills__name{
+    font-size:var(--small-font-size);
+    transition:color 0.4s,text-shadow 0.4s;
+}
+.skills__item:hover{
+    filter: drop-shadow(0 0 12px var(--first-color));
+}
+.skills__item:hover .skills__name{
+    color:var(--first-color);
+    text-shadow:0 0 12px var(--first-color);
+}
+.skills__card .blob-small{
+    z-index:1;
+    top: -5rem;
+    left:0;
+    right: 0;
+    justify-self:center;
 }
 /*NAVIGATION FOR MOBILE DEVICES*/
 @media(width<=1150px){
@@ -619,13 +640,21 @@ label{
     }
 
     .home__container,
-    .about__container{
+    .about__container,
+    .skills__container{
         grid-template-columns:400px;
         justify-content:center;
     }
+    
     .project__card{
         width: 350px;
     }
+    .skills__description{
+        width:500px;
+        margin-inline:auto;
+
+    }
+
 }
 
 /*LARGE DEVICE*/
@@ -739,4 +768,30 @@ label{
         right:-3rem;
     }
 
+
+.skills__description{
+    width:700px;
+}
+.skills__container{
+    grid-template-columns: 700px;
+}
+.skills__card{
+    padding:3.5rem 2rem;
+    flex-direction:row;
+    column-gap:6rem;
+}
+.skills__title{
+    font-size:var(--h1-font-size);}
+    .skills__img{
+        width: 20px;
+    }
+    .skills__name{
+        font-size:var(--normal-font-size);
+    }
+    .skills__card .blob-small{
+        top:-7.5rem;
+    }
+    .skills__list{
+        gap:1.5rem;
+    }
 }
