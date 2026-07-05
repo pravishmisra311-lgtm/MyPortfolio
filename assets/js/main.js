@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-           /* autoplay: {
+        /* autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
             }*/
@@ -78,4 +78,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/*===============CONTACT EMAIL JS===============*/
+const contactForm = document.getElementById('contact-form'),
+contactMessage = document.getElementById('contact-message')
 
+const sendEmail = async (e) => {
+    e.preventDefault()
+    try {
+        await emailjs.sendForm('service_ubmqccc', 'template_g9h7g3d', '#contact-form', '-b-mYRJao8usF4xTm')
+
+
+        contactMessage.textContent = 'Message sent successfully ✅'
+
+        contactForm.reset()
+}catch (error) {
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+    }finally{
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000)
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
