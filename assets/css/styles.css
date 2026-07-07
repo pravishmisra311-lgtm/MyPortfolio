@@ -154,6 +154,27 @@ label{
 
     }
 
+
+    /*=====CUSTOM CURSOR====*/
+    .cursor{
+        position:fixed;
+        left:0;
+        top:0;
+        z-index: 9999;
+        width: 30px;
+        height: 30px;
+        background-color: hsl(var(--hue),60%,75%);
+        border-radius: 50%;
+        box-shadow:0 0 30px var(--first-color);
+        mix-blend-mode: difference;
+        pointer-events:none;
+        transition: transform 0.2s ease-out,left 0.2s ease-out,
+                                top 0.2s ease-out,width 0.3s,height 0.3s;
+    }
+    .hide-cursor{
+        height: 0;
+        width: 0;
+    }
 /*HEADER AND NAV*/
 .header{
     position:fixed;
@@ -1041,5 +1062,12 @@ transition:background-color 0.4s,color 0.4s;
 @media(width>=2048px){
     body{
         zoom:120%;
+    }
+}
+
+/*Custom cursor is hidden for mobile devices*/
+@media(pointer:coarse){
+    .cursor{
+        display:none;
     }
 }
