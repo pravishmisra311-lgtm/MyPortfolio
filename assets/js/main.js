@@ -191,5 +191,6 @@ sr.reveal(`.contact__form`)
 sr.reveal(`.contact__link`,{delay:600,interval:200})
 sr.reveal('.footer__container')
 sr.reveal('.home__buttons',{delay:1500})
+sr.reveal(`.home__social`,{delay:1500})
 
 
