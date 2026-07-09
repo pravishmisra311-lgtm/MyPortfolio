@@ -40,7 +40,7 @@ letters.forEach((char,i)=>{
 
 /*HOME TYPED JS*/
 const typedHome = new Typed('#home-typed', {
-strings: ['DSA with Java Enthusiast', 'Full Stack Learner','Student'],
+strings: ['Java DSA enthusiast', 'Full Stack Learner','Problem Solver'],
 typeSpeed: 60,
 backSpeed:30,
 backDelay:2000,
@@ -190,6 +190,6 @@ sr.reveal(`.skills__list`,{delay:1200,interval:200})
 sr.reveal(`.contact__form`)
 sr.reveal(`.contact__link`,{delay:600,interval:200})
 sr.reveal('.footer__container')
-
+sr.reveal('.home__buttons',{delay:1500})
 
 
