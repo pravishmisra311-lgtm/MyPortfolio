@@ -362,6 +362,8 @@ label{
 
 .home__buttons{
     display: flex;
+    position: relative;
+    bottom:auto;
     justify-content: center;
     margin-top:2rem;
 }
@@ -391,9 +393,8 @@ label{
 /*=============== HOME SOCIAL ===============*/
 
 .home__social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
+    position: relative;
     gap: 1rem;
     margin-top: 1.75rem;
 }
@@ -431,7 +432,7 @@ label{
 /*=====ABOUT SECTION======*/
 .about__container{
     color:var(--white-color);
-    text-align:center;
+    text-align:start;
 }
 
 .about__title{
@@ -858,6 +859,8 @@ transition:background-color 0.4s,color 0.4s;
 
 }
 
+
+
 /*=========SCROLL BAR===========*/
 ::-webkit-scrollbar{
     width:0.6rem;
@@ -1003,10 +1006,9 @@ transition:background-color 0.4s,color 0.4s;
     top:21rem;
 }
 .about__container{
-    grid-template-columns: 580px 380px;
-    justify-content:space-between;
+   grid-template-columns: 540px 380px;
     align-items: center;
-    text-align: initial;
+    text-align:start;
 
 }
 .about__description{
