@@ -432,7 +432,7 @@ label{
 /*=====ABOUT SECTION======*/
 .about__container{
     color:var(--white-color);
-    text-align:start;
+    text-align:center;
 }
 
 .about__title{
@@ -444,7 +444,7 @@ label{
 }
 
 .about__description{
-    margin-bottom:1rem;
+    margin-bottom:2rem;
 }
 
 .about__button{
@@ -1005,18 +1005,35 @@ transition:background-color 0.4s,color 0.4s;
 .home .blob-small:nth-child(2){
     top:21rem;
 }
+.about__title{
+    max-width:700px;
+}
 .about__container{
-   grid-template-columns: 540px 380px;
+    padding-top:9rem;
+   grid-template-columns: 700px 320px;
+   column-gap: 8rem;
     align-items: center;
-    text-align:start;
+    text-align:center;
 
 }
 .about__description{
+    background:var(--container-color);
+    padding:2rem;
+    border-radius:1.5rem;
     font-size: var(--h3-font-size);
     margin-bottom: 2rem;
+    transition:.3s;
+}
+.about__description:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(255,150,100,.25);
 }
 .about__button{
     width: initial;
+    padding:1rem 5rem;
+}
+.about__button:hover{
+    transform:translate(-3px);
 }
 
 .project__container{
