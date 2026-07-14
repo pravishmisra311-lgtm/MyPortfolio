@@ -632,6 +632,70 @@ label{
     justify-self:center;
 }
 
+/*====ACHIEVEMENT DECTION=====*/
+
+/*=============== ACHIEVEMENTS ===============*/
+
+.achievement__container{
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+}
+
+.achievement__card{
+    background:var(--container-color);
+    border:1px solid transparent;
+    padding:2.5rem 2rem;
+    border-radius:2rem;
+    text-align:center;
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.achievement__card:hover{
+    transform:translateY(-10px);
+    border-color:var(--first-color);
+    box-shadow:0 18px 40px rgba(255,145,110,.18);
+}
+
+.achievement__icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 1.2rem;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:rgba(255,145,110,.12);
+    color:var(--first-color);
+    font-size:2rem;
+}
+
+.achievement__number{
+    font-size:2.3rem;
+    color:var(--first-color);
+    margin-bottom:.4rem;
+}
+
+.achievement__title{
+    font-size:var(--h3-font-size);
+    margin-bottom:.8rem;
+}
+
+.achievement__description{
+    color:var(--text-color);
+    line-height:1.7;
+}
+
+/* Mobile */
+
+@media screen and (max-width:768px){
+
+    .achievement__container{
+        grid-template-columns:1fr;
+    }
+
+}
+
 /*=======CONTACT SECTION=======*/
 .contact__container{
     row-gap:4rem;
