@@ -1128,7 +1128,20 @@ text-align:center;
     .contact__content{
         row-gap:2rem;
     }
+    
+    .contact__link{
+    display:block;
+    transition:all .4s ease;
+    border-radius:1.5rem;
+}
 
+.contact__link:hover{
+    transform:translateY(-8px);
+}
+
+.contact__link:hover .contact__info{
+    box-shadow:0 12px 30px rgba(255,145,110,.20);
+}
     .footer__container{
         grid-template-columns: 600px max-content;
         justify-content: space-between;
@@ -1147,7 +1160,7 @@ text-align:center;
         margin-top:7rem;
     }
     .footer .blob-big{
-        bottom:-10rem;
+        bottom:0rem;
     }
 
     .scrollup{
